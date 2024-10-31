@@ -1,15 +1,18 @@
-const CartItem = ({item, deleteFromCart}) => {
+import styles from "@/styles/Carditem.module.css"; 
 
-    const {id, name, price, quantity} = item;
- 
-   return (
-   <div className="cart-item">
-     <h4 className="cart-item-name">{name}</h4>
-     <h5 className="cart-item-price">$ {price} x {quantity} = {price * quantity}</h5>
-     <button onClick={() => deleteFromCart(id)} className="cart-item-buttons">Eliminar uno</button>
-     <button onClick={() => deleteFromCart(id, true)} className="cart-item-buttons">Eliminar todos</button>
-   </div>
-   );
- };
- 
- export default CartItem;
+const CartItem = ({ item, deleteFromCart }) => {
+    const { id, name, price, quantity } = item;
+
+    return (
+        <div className={styles.carditem}>
+            <h4 className={styles.carditemname}>{name}</h4>
+            <h5 className={styles.carditemprice}>$ {price} x {quantity} = ${price * quantity}</h5>
+            <div className={styles.carditembuttons}>
+                <button onClick={() => deleteFromCart(id)} className={styles.carditembutton}>Eliminar uno</button>
+                <button onClick={() => deleteFromCart(id, true)} className={styles.carditembutton}>Eliminar todos</button>
+            </div>
+        </div>
+    );
+};
+
+export default CartItem;

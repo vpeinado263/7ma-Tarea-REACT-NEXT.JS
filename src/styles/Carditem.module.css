@@ -1,0 +1,40 @@
+.carditem {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 16px; 
+    margin: 8px 0; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carditemname {
+    font-size: 1.2rem; 
+    margin: 0; 
+}
+
+.carditemprice {
+    font-size: 1rem; 
+    color: #555;
+    margin: 4px 0; 
+}
+
+.carditembuttons {
+    display: flex; 
+    gap: 8px; 
+}
+
+.carditembutton {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+}
+
+.carditembutton:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
