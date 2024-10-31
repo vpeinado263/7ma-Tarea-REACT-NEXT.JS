@@ -1,7 +1,5 @@
 import Button from "../atoms/Button";
 
-
-
 const Card = ({producto}) => {
     const {img,title, text, bgcolor, ccolor} = producto;
 

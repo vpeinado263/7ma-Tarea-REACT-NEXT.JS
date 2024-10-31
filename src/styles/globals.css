@@ -1,0 +1,8 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar rellenos predeterminados */
+    background-color: #7cbad8; /* Color de fondo suave */
+    color: #333; /* Color de texto por defecto */
+}
