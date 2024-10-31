@@ -1,9 +1,9 @@
 import { useReducer } from "react";
-import { TYPES } from "../actions/actions";
-import { shoppingReducer } from "../reducer/shoppingReducer";
-import { shoppingInitialState } from "../reducer/shoppingInitialState";
-import Product from "../components/Product";
-import CartItem from "../components/CartItem";
+import { TYPES } from "../../actions/actions";
+import { shoppingReducer } from "../../reducer/shoppingReducer";
+import { shoppingInitialState } from "../../reducer/shoppingInitialState";
+import Product from "../organisms/Product";
+import CartItem from "../molecules/CardItem";
 
 const ShoppingCart = () => {
  

@@ -1,6 +1,7 @@
 import CardContainer from "./CardsContainer";
 
 
+
 const Product = ({product, addToCart}) => {
 
     const {id, name, price} = product;
