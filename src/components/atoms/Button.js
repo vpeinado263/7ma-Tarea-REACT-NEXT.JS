@@ -1,6 +1,7 @@
-const Button = ({bgcolor, ccolor}) => {
+const Button = ({bgcolor, ccolor, addToCart, id}) => {
     return(
         <>
+         <button onClick={() => addToCart(id)}>Agregar al carrito</button>
         <style jsx>{`
             button {
                 color: ${!ccolor ? "white" : ccolor};

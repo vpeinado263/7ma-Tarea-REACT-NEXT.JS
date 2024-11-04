@@ -1,40 +1,26 @@
 .product {
-    display: flex; /* Utiliza flexbox para alinear el contenido */
-    flex-direction: column; /* Organiza el contenido en una columna */
-    border: 1px solid #ddd; /* Borde alrededor del producto */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 16px; /* Espaciado interno */
-    margin: 8px; /* Margen entre productos */
-    background-color: #fff; /* Color de fondo blanco */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    transition: transform 0.2s; /* Transición suave al escalar */
+    display: flex; 
+    flex-direction: column; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 16px;
+    margin: 8px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
 }
 
 .product:hover {
-    transform: scale(1.02); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.02); 
 }
 
 .productName {
-    font-size: 1.5rem; /* Tamaño de fuente para el nombre del producto */
-    margin: 0 0 8px; /* Espaciado inferior */
+    font-size: 1.5rem; 
+    margin: 0 0 8px; 
 }
 
 .productPrice {
-    font-size: 1.2rem; /* Tamaño de fuente para el precio */
-    color: #333; /* Color gris oscuro para el precio */
-    margin: 0 0 16px; /* Espaciado inferior */
-}
-
-.addToCart {
-    padding: 10px 15px; /* Espaciado interno para el botón */
-    background-color: #336ee4; /* Color de fondo azul */
-    color: white; /* Texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
-}
-
-.addToCart:hover {
-    background-color: #7ba1e8; /* Color más claro al pasar el mouse */
+    font-size: 1.2rem; 
+    color: #333;
+    margin: 0 0 16px; 
 }

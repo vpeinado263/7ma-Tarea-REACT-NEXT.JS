@@ -8,6 +8,8 @@ import CartItem from "../molecules/CardItem";
 
 const ShoppingCart = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+
+  //Destructurar
   const { products, cart } = state;
 
   const addToCart = (id) => dispatch({ type: TYPES.ADD_TO_CART, payload: id });
