@@ -1,24 +1,17 @@
 import Card from "../molecules/Card";
+import { shoppingInitialState } from "@/reducer/shoppingInitialState";
 
+const CardContainer = ({addToCart}) => {
+const productos = shoppingInitialState.products;
 
-const productos = [
-    {
-        id: 1,
-        img: "https://http2.mlstatic.com/D_NQ_NP_716492-MLA52853049595_122022-O.webp",
-        title:  "Colchones de aire o espuma",
-        text: "Para reducir la presión en las áreas vulnerables.",
-        bgcolor: "green",
-    },
-  ];
-
-const CardContainer = () => {
     return (
     <>
         <div>
             {
-             productos.map(producto => <Card producto={producto}/>)
+             productos.map(producto => <Card key={producto.id} producto={producto} addToCart={addToCart}/>)
             }
         </div>
+
         <style jsx>{`
         div {
             display: flex;

@@ -1,18 +1,17 @@
-import styles from "@/styles/Product.module.css";
-import Button from "../atoms/Button";
+import { useReducer } from "react";
+import { TYPES } from "../../actions/actions";
+import { shoppingReducer } from "../../reducer/shoppingReducer";
+import { shoppingInitialState } from "../../reducer/shoppingInitialState";
 import CardContainer from "./CardsContainer";
 
-const Product = ({ product, addToCart }) => {
-    const { id, name, price } = product;
+const Product = () => {
+    const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+    const { products } = state;
+
+    const addToCart = (id) => dispatch({ type: TYPES.ADD_TO_CART, payload: id });
 
     return (
-        <div className={styles.product}>
-            <h4 className={styles.productName}>{name}</h4>
-            <h5 className={styles.productPrice}>$ {price}</h5>
-            <CardContainer />
-            <Button addToCart={addToCart}
-                id={id}/>
-        </div>
+        <CardContainer addToCart={addToCart} /> 
     );
 };
 
