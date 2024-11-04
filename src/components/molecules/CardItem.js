@@ -4,13 +4,15 @@ const CartItem = ({ item, deleteFromCart }) => {
 
     return (
         <>
-          <div className="carditem">
+        <div className="container">
+             <div className="carditem">
             <h4 className="carditemname">{title}</h4>
             <h5 className="carditemprice">$ {price} x {quantity} = ${price * quantity}</h5>
             <img className="img" src={img} alt={title}/>
             <div className="carditembuttons">
                 <button onClick={() => deleteFromCart(id)} className="carditembutton">Eliminar uno</button>
                 <button onClick={() => deleteFromCart(id, true)} className="carditembutton">Eliminar todos</button>
+            </div>
             </div>
         </div>
 
@@ -22,19 +24,24 @@ const CartItem = ({ item, deleteFromCart }) => {
             border-radius: 8px; 
             padding: 16px; 
             margin: 8px 0; 
-            background-color: rgb(247, 139, 2); 
+        
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+           
+
         }
         
         .carditemname {
             font-size: 1rem; 
             margin: 0; 
+           
         }
         
         .carditemprice {
             font-size: 1rem; 
             color: #555;
             margin: 4px 0; 
+            
         }
 
         .carditembuttons {
@@ -42,6 +49,8 @@ const CartItem = ({ item, deleteFromCart }) => {
             gap: 10px;
             justify-content: center;
             margin-top: 10px;
+
+           
         }
         
         .carditembutton {

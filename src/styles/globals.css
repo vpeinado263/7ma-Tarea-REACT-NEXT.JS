@@ -1,14 +1,27 @@
 
+* {
+    margin: 0;
+    padding: 0;
+ 
+  }
 body {
-    font-family: sans-serif;
-    margin: 0; 
-    padding: 0; 
-    background-color: #ffffff; 
-    color: #333; 
-    background-image: url(https://http2.mlstatic.com/D_NQ_NP_997572-MLA51814518297_102022-O.webp);
-    background-repeat: no-repeat;
-    justify-content: center;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;               
+    justify-content: center;     
+    align-items: center;          
     
-
+    background-image: url(../../public/cart.png);
+    background-repeat: no-repeat;
+                     
+       
 }
+
+.container {
+    display: flex;                
+    flex-direction: row;          
+              
+   
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
