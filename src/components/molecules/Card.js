@@ -5,13 +5,13 @@ const Card = ({producto, addToCart}) => {
 
     return(
         <>
-        <figure>
+        <figure className="productCard">
             <h5 className="productPrice">$ {price}</h5>
-            <img src={img} alt={title}/>
+            <img className="productImage" src={img} alt={title}/>
             <figcaption>
-                <h3>{title}</h3>
+                <h3 className="productTitle">{title}</h3>
             </figcaption>
-            <p>{text}</p>
+            <p className="productDescription">{text}</p>
             <Button
                     bgcolor={bgcolor}
                     ccolor={ccolor}
@@ -38,8 +38,8 @@ const Card = ({producto, addToCart}) => {
         }
 
         .productImage {
-            width: 100%;
-            height: auto;
+            width: 5rem;
+            height: 5rem;
             border-radius: 8px;
         }
 
