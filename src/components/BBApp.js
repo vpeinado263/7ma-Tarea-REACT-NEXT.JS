@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-
 import Quote from './Quote';
 import Loader from './Loader';
 
