@@ -8,8 +8,7 @@ const Quote = () => {
     <div className="spinnercentro">
       <blockquote>{text}</blockquote>
       <h3>{author}</h3>
-      </div>
-      
+    </div>  
     </>
   )
 }

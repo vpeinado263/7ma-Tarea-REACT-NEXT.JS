@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import Loader from './Loader';
+
 import Quote from './Quote';
+import Loader from './Loader';
 
 
 const initialQuote = {
@@ -11,6 +12,7 @@ const initialQuote = {
 
 const BBApp = () => {
  const [quote, setQuote] = useState(initialQuote)
+ 
  const [isLoading, setIsLoading] = useState(false)
 
  //ASYNC AWAIT
