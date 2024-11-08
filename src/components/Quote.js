@@ -1,5 +1,5 @@
 
-const Quote = () => {
+const Quote = ({quote}) => {
 
     const {text, author} = quote;
 
