@@ -1,11 +1,14 @@
 import React from 'react'
 
 const Loader = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+    return (
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      )
 }
 
-export default Loader
+export default Loader;
