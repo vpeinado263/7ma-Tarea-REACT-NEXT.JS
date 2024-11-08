@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import Quote from './Quote';
 import Loader from './Loader';
+import styles from "@/styles/BBApp.module.css";
+import Image from 'next/image';
 
 
 const initialQuote = {
@@ -40,20 +42,22 @@ const BBApp = () => {
    }, [])
    
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems:"center", width: 600 }}>
-    <img
+    <div className={styles.container}>
+    <Image
     src= "https://www.dafont.com/forum/attach/orig/1/4/149303.jpg"
     alt= "breaking-bad"
-    width= "300"
+    width={290}
+    height={180}
+    priority
     />
 
     {
       isLoading ? <Loader/> : <Quote quote={quote}/>
     }
 
-    <button style={{width: "100%"}} onClick={ updateQuote}>Obtener otra cita</button>
+    <button className={styles.button} onClick={ updateQuote}>Obtener otra cita</button>
     </div>
   )
 }
 
-export default BBApp
+export default BBApp;

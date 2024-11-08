@@ -1,3 +1,4 @@
+import styles from "@/styles/Quote.module.css";
 
 const Quote = ({quote}) => {
 
@@ -5,7 +6,7 @@ const Quote = ({quote}) => {
 
   return (
     <>
-    <div className="spinnercentro">
+    <div className={styles.spinnercentro}>
       <blockquote>{text}</blockquote>
       <h3>{author}</h3>
     </div>  
