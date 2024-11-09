@@ -47,3 +47,6 @@ La aplicación se destaca por usar *React Hooks*, la biblioteca *Axios* para rea
 
 ### Manejo de Errores con `try/catch`
 - Se introdujo la estructura de control `try/catch` para capturar y manejar posibles errores en la petición HTTP, mejorando la robustez de la aplicación en caso de que la API falle o se experimente un problema de red.
+
+in process : https://7ma-tarea-react-next-js.vercel.app/
+
