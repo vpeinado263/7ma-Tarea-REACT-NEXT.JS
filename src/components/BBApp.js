@@ -44,10 +44,10 @@ const BBApp = () => {
   return (
     <div className={styles["container"]}>
     <Image
-    src= "https://www.dafont.com/forum/attach/orig/1/4/149303.jpg"
+    src= "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1024px-Breaking_Bad_logo.svg.png"
     alt= "breaking-bad"
-    width={600}
-    height={300}
+    width={170}
+    height={90}
     priority
     />
 

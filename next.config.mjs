@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['www.dafont.com'],  
+    domains: ['www.dafont.com', 'upload.wikimedia.org'],  
   },
 };
 

@@ -12,7 +12,7 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #1D4018;
+    background: rgb(246, 248, 247);
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
   .ld-sellipsis div:nth-child(1) {
