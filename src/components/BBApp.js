@@ -42,12 +42,12 @@ const BBApp = () => {
    }, [])
    
   return (
-    <div className={styles.container}>
+    <div className={styles["container"]}>
     <Image
     src= "https://www.dafont.com/forum/attach/orig/1/4/149303.jpg"
     alt= "breaking-bad"
-    width={290}
-    height={180}
+    width={600}
+    height={300}
     priority
     />
 
@@ -55,7 +55,7 @@ const BBApp = () => {
       isLoading ? <Loader/> : <Quote quote={quote}/>
     }
 
-    <button className={styles.button} onClick={ updateQuote}>Obtener otra cita</button>
+    <button className={styles["button"]} onClick={ updateQuote}>Obtener otra cita</button>
     </div>
   )
 }

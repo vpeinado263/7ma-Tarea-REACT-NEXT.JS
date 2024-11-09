@@ -6,7 +6,7 @@ const Quote = ({quote}) => {
 
   return (
     <>
-    <div className={styles.spinnercentro}>
+    <div className={styles["spinnercentro"]}>
       <blockquote>{text}</blockquote>
       <h3>{author}</h3>
     </div>  

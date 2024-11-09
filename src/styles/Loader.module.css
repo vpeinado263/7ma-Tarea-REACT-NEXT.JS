@@ -1,12 +1,12 @@
 /******loader***/
 
-.ldsellipsis {
+.ld-sellipsis {
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
   }
-  .ldsellipsis div {
+  .ld-sellipsis div {
     position: absolute;
     top: 33px;
     width: 13px;
@@ -15,23 +15,23 @@
     background: #1D4018;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
-  .ldsellipsis div:nth-child(1) {
+  .ld-sellipsis div:nth-child(1) {
     left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
+    animation: ld-sellipsis1 0.6s infinite;
   }
-  .ldsellipsis div:nth-child(2) {
+  .ld-sellipsis div:nth-child(2) {
     left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
+    animation: ld-sellipsis2 0.6s infinite;
   }
-  .ldsellipsis div:nth-child(3) {
+  .ld-sellipsis div:nth-child(3) {
     left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
+    animation: ld-sellipsis2 0.6s infinite;
   }
-  .ldsellipsis div:nth-child(4) {
+  .ld-sellipsis div:nth-child(4) {
     left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
+    animation: ld-sellipsis3 0.6s infinite;
   }
-  @keyframes lds-ellipsis1 {
+  @keyframes ld-sellipsis1 {
     0% {
       transform: scale(0);
     }
@@ -39,7 +39,7 @@
       transform: scale(1);
     }
   }
-  @keyframes lds-ellipsis3 {
+  @keyframes ld-sellipsis3 {
     0% {
       transform: scale(1);
     }
@@ -47,7 +47,7 @@
       transform: scale(0);
     }
   }
-  @keyframes lds-ellipsis2 {
+  @keyframes ld-sellipsis2 {
     0% {
       transform: translate(0, 0);
     }
