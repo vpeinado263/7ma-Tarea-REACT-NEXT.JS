@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
     margin: 0;
@@ -25,3 +26,14 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
+=======
+body {
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    background-image: url('https://www.dafont.com/forum/attach/orig/1/4/149303.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+>>>>>>> 0db11984dc0755bf1c0e14ba3af9a17d810b4c24

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "shopping-cart",
+=======
+  "name": "breakingbad",
+>>>>>>> 0db11984dc0755bf1c0e14ba3af9a17d810b4c24
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "next": "15.0.1"
@@ -18,3 +23,15 @@
     "eslint-config-next": "15.0.1"
   }
 }
+=======
+    "axios": "^1.7.7",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3"
+  }
+}
+>>>>>>> 0db11984dc0755bf1c0e14ba3af9a17d810b4c24

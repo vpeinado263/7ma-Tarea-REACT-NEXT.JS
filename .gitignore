@@ -5,3 +5,9 @@
 /.next/
 /out/
 
+<<<<<<< HEAD
+=======
+# production
+/build
+
+>>>>>>> 0db11984dc0755bf1c0e14ba3af9a17d810b4c24
