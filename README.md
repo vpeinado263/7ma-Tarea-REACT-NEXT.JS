@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-#6ta-Tarea-REACT-NEXT.JS
+#7ma-Tarea-REACT-NEXT.JS
  
 ## Descripción
 
@@ -51,5 +49,5 @@ La aplicación se destaca por usar *React Hooks*, la biblioteca *Axios* para rea
 - Se introdujo la estructura de control `try/catch` para capturar y manejar posibles errores en la petición HTTP, mejorando la robustez de la aplicación en caso de que la API falle o se experimente un problema de red.
 
 in process : https://7ma-tarea-react-next-js.vercel.app/
->>>>>>> 0db11984dc0755bf1c0e14ba3af9a17d810b4c24
+
 
