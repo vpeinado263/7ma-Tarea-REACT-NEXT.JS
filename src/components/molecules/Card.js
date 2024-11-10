@@ -1,18 +1,19 @@
 import Button from "../atoms/Button";
+import styles from "@/styles/Card.module.css";
 
 const Card = ({producto, addToCart}) => {
     const { id, title, text, img, price,  bgcolor, ccolor} = producto;
 
     return(
         <>
-        <div className="containerCard">
-             <figure className="productCard">
-            <h5 className="productPrice">$ {price}</h5>
-            <img className="productImage" src={img} alt={title}/>
+        <div className={styles.containerCard}>
+             <figure className={styles.productCard}>
+            <h5 className={styles.productPrice}>$ {price}</h5>
+            <img className={styles.productImage} src={img} alt={title}/>
             <figcaption>
-                <h3 className="productTitle">{title}</h3>
+                <h3 className={styles.productTitle}>{title}</h3>
             </figcaption>
-            <p className="productDescription">{text}</p>
+            <p className={styles.productDescription}>{text}</p>
             <Button
                     bgcolor={bgcolor}
                     ccolor={ccolor}
@@ -21,58 +22,6 @@ const Card = ({producto, addToCart}) => {
                 />
         </figure>
         </div>
-       
-
-        <style jsx>{`
-        .containerCard {
-           
-        }
-          .productCard {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 8px;     
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-
-        .productCard:hover {
-            transform: scale(1.02);
-        }
-
-        .productImage {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 8px; 
-              
-        }
-
-        .productTitle {
-            font-size: 1.2rem;
-            text-align: center;
-            margin: 10px 0;
-           
-        }
-
-        .productDescription {
-            font-size: 1rem;
-            text-align: center;
-            color: #666;
-           
-        }
-
-        .productPrice {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            color: #333;
-            margin: 10px 0;
-           
-        }
-        `}</style>
         </>
     )
 }
