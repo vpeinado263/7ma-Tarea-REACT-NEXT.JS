@@ -20,7 +20,7 @@ const Card = ({producto, addToCart}) => {
                     addToCart={addToCart}
                     id={id}
                 />
-        </figure>
+            </figure>
         </div>
         </>
     )
